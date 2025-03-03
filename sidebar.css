@@ -1,0 +1,72 @@
+/* COMMENTS IN CSS*/
+.sidebar{
+    background-color: rgb(245, 245, 245);
+    position: fixed;
+    left: 0px;
+    bottom: 0;
+    top: 55px;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+
+}
+.sidebar-link{
+   
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    
+}
+.sidebar-link:hover{
+    background-color: rgb(236, 235, 235);
+}
+.sidebar-link img{
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    
+}
+.sidebar-link div{
+    
+    font-size: 10px;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.notifications-icon-container .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-inline: 8px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip{
+    opacity: 1;
+    font-family: Roboto,Arial;
+}
+.search-button,
+.voice-search-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
